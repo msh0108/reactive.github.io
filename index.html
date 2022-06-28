@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반응형 홈페이지</title>
+<link rel="shortcut icon" href="images/Missha.ico">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/jquery.touchSlider.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/reset_.css" media="all">
+<link rel="stylesheet" href="css/main.css" media="all">
+<style>
+
+    
+</style>
+</head>
+<body>
+    <header id="top">
+      <div class="box">
+       <div class="list12">
+        <div class="all_menu">
+            <img src="images/menu.png" alt="전체메뉴" width="20" height="20">
+        </div><!-- all_menu전체메뉴 아이콘 -->
+        <div class="menu_wrap">
+            <ul class="menu">
+                <li><a href="#">MISSHA</a></li>
+                <li><a href="#">베스트&amp;신상품</a></li>
+                <li><a href="#">스킨케어</a></li>
+                <li><a href="#">메이크업</a></li>
+                <li><a href="#">헤어&amp;바디</a></li>  
+                <li><a href="#">#MISSHA</a></li>  
+                <li><a href="#">이벤트</a></li>
+            </ul><!-- menu -->
+            <p class="menu_close">X</p><!-- 전체메뉴 닫기 -->
+        </div><!-- menu_wrap 전체메뉴 내용,닫기 -->
+        <h1><a href="index.html"><img src="images/logo.png" alt="미샤" width="100" height="20"></a></h1>
+        <div class="search_wrap">
+                    <!-- <input type="search" id="u_search"> -->
+        <input type="image" src="images/search.png" alt="검색" width="30" height="30" id="btn_search">
+        <div>
+        <p>
+           <span>
+            <label for="search" id="search_t">통합검색</label>
+            <input type="text" id="search" autocomplete="off">
+            <button type="button" id="search_b">검색</button>
+            </span>
+        </p>
+        </div>
+        </div>
+                
+        </div><!-- list12 -->
+        </div><!-- box -->
+    </header><!-- top -->
+    <div class="nav_wrap">
+                <div class="box">
+                <div class="list12">
+        <nav id="main_menu">
+            <ul>
+                <li><a href="#">MISSHA</a></li>
+                <li><a href="#">베스트&amp;신상품</a></li>
+                <li><a href="#">스킨케어</a></li>
+                <li><a href="#">메이크업</a></li>
+                <li><a href="#">헤어&amp;바디</a></li>  
+                <li><a href="#">#MISSHA</a></li>  
+                <li><a href="#">이벤트</a></li>  
+            </ul>
+        </nav><!-- main_menu 메인메뉴-->
+        </div><!-- box -->
+        </div><!-- list12 -->
+        </div><!-- nav_wrap -->
+    <div id="touchSlider11">
+        <ul>
+            <li><img src="images/mainbanner1.jpg" alt="메인화면이미지1">
+            <div>
+            <h2>Skin Care</h2>
+        <p>우리는 20여년의 놀라운 여정을 지나 왔습니다.<br>
+            고객의 피부 고민에 귀를 기울여 만족할 만한 효과로<br>
+            대한민국의 화장품 시장을 선도해 왔습니다.</p></div></li>
+            <li><img src="images/mainbanner2.jpg" alt="메인화면이미지2">
+            <div>
+            <h2>수퍼아쿠아<br>울트라 히알론 크림</h2>
+        <p>10가지 히알루론산의 100시간 수분 돌파력<br>
+            20가지 무첨가로 피부에 순한 수분크림</p></div></li>
+            <li><img src="images/mainbanner3.jpg" alt="메인화면이미지3">
+            <div>
+            <h2>타임 레볼루션<br>더 퍼스트 에센스 5X</h2>
+        <p>안티에이징의 시작, 피부 밑바탕이 달라지는<br>
+            14일 첫 단계 에센스를 경험해보세요.</p></div></li>
+        </ul>
+        
+    </div><!-- touchSlider11 -->
+    <script>
+$('#touchSlider11').touchSlider({
+	autoplay: {
+		enable: true,
+		pauseHover: true,
+		addHoverTarget: '', 
+		interval: 3500
+	}
+});
+    
+</script>
+<div class="box">
+<div id="banner2">
+    <ul>
+    <li><a href="#"><img src="images/nb1.jpg" alt="타임레볼루션" width="429" height="600"><div class="bn new1"><div><span>NEW</span><h4>타임 레볼루션<br>더 퍼스트 에센스 5X</h4><p>안티에이징의 시작, 피부 밑바탕이 달라지는 14일 첫 단계
+ 에센스. 극한 환경에서 찾아낸 익스트림 시카효모발효물™을
+ 담아 14일 후 눈에 띄는 피부 변화.</p></div></div></a></li>
+        <li><a href="#"><img src="images/nb2.jpg" alt="수퍼아쿠아" width="429" height="600"><div class="bn new2"><div><span>NEW</span><h4>수퍼아쿠아<br>
+울트라 히알론 크림</h4><p>10가지 히알루론산의 100시간 수분 돌파력<br>
+20가지 무첨가로 피부에 순한 수분크림</p></div></div></a></li>
+        <li><a href="#"><img src="images/nb3.jpg" alt="앰플" width="429" height="600"><div class="bn best1"><div><span>BEST</span><h4>비타씨플러스<br>
+잡티씨 탄력 앰플</h4><p>3일부터 느껴지는 잡티 케어 효과 #리얼비타씨앰플
+비타C리포솜 포뮬러 33% 함유로 업그레이드된 10중 잡티&amp;
+탄력 케어. 매일 순하게 바르는 저자극 비타민 앰플</p></div></div></a></li>
+    </ul>
+    </div><!-- banner2  -->
+    </div><!-- box -->
+    <div id="banner3">
+       <div class="banner3_left">
+        <a href="#"><img src="images/heritage.png" alt="배너3" width="608" height="499"></a>
+        </div>
+        <div class="banner3_right">
+        <h2>미샤, 효과로 말하다</h2>
+        <p>우리는 20여년의 놀라운 여정을 지나 왔습니다.<br>
+        고객의 피부 고민에 귀를 기울여 만족할 만한 효과로<br>
+        대한민국의 화장품 시장을 선도해 왔습니다.</p>
+        <p>천 만 고객의 니즈와 데이터를 기반으로<br>
+        안전하고 고도화된 솔루션을 개발하고, 최적의 효과를 전달합니다.</p>
+        <!-- <span><a href="#">자세히보기</a></span> -->
+        </div> 
+     </div><!-- banner3 -->
+     <div class="box">
+     <div id="banner4">
+         <div class="banner4_left">
+           <div class="left_left">
+            <div class="banner4_left_1 web">
+              <a href="https://youtu.be/5Z_uFCCLJX0" target="_blank"><img src="images/banner4_1.jpg" alt="유튜브1" width="200" height="129"></a>
+              <p><img src="images/youtube.png" alt="유튜브로고" width="49" height="14"><br>#수분왕찐보습<br>#수퍼아쿠아<br>#100시간수분돌파력</p>   
+            </div><!-- banner4_left_1 -->
+            <div class="banner4_left_2 web">
+              <a href="https://youtu.be/Ryi-flTArDQ" target="_blank"><img src="images/banner4_2.png" alt="유튜브2" width="200" height="129"></a>
+              <p><img src="images/youtube.png" alt="유튜브로고" width="49" height="14"><br>#첫단계에센스<br>#타임레볼루션<br>#더퍼스트에센스</p>   
+            </div><!-- banner4_left_2 -->
+            <div class="banner4_left_3 web">
+              <a href="https://youtu.be/zZwz74UVQbg" target="_blank"><img src="images/banner4_3.jpg" alt="유튜브3" width="200" height="129"></a>
+              <p><img src="images/youtube.png" alt="유튜브로고" width="49" height="14"><br>#수퍼아쿠아<br>#100시간수분돌파력<br>#수분크림</p>   
+            </div><!-- banner4_left_3 -->
+            </div><!-- left_left -->
+            <div class="left_right">
+             <div class="banner4_left_4 web">
+              <a href="https://www.instagram.com/missha.official/" target="_blank"><img src="images/banner4_4.jpg" alt="유튜브1" width="200" height="129"></a>
+              <p><img src="images/instagram_logo.jpg" alt="유튜브로고" width="65" height="20"><br>#수퍼아쿠아<br>#울트라히알론</p>   
+            </div><!-- banner4_left_4 -->
+            <div class="banner4_left_5 web">
+              <a href="https://www.instagram.com/missha.official/" target="_blank"><img src="images/banner4_5.jpg" alt="유튜브1" width="200" height="129"></a>
+              <p><img src="images/instagram_logo.jpg" alt="유튜브로고" width="65" height="20"><br>#타임레볼루션<br>#보랏빛앰플<br>#안티에이징<br>#푹잠효과</p>   
+            </div><!-- banner4_left_5 -->   
+            </div>
+         </div>
+         <div class="banner4_right">
+            <div class="banner4_right_1">
+              <a href="#"><img src="images/banner4_6.png" alt="이벤트공고" width="395" height="270"></a>
+              <p><img src="images/event_logo.png" alt="공고로고" width="31" height="26">미샤 수분왕 찐보습 CHECK LIST!<br><span>누구보다 수분 케어에 진심이라면, 수분왕 셀프 점검 해보세요!<br>2021.06.21 ~ 2021.07.11</span></p>   
+            </div><!-- banner4_left_5 -->  
+         </div>
+     </div><!-- banner4 -->
+     </div><!-- box -->
+     <div id="bottom_wrap">
+    <div class="box">
+        <div class="list12">
+            <div class="bottom_left">
+                <ul>
+                    <li><a href="#">PARTNER ZONE</a></li>  
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li> 
+                </ul>
+                <div class="notice">
+                <address>
+            (주)에이블씨엔씨<br>
+            서울특별시 서초구 서초대로38길 12(서초동, 마제스티시티 타워1 13층)<br>
+            E-Mail cs@mynunc.com
+                </address>
+                <p>COPYRIGHT © ABLEC&amp;C. ALL RIGHT RESERVED.</p>
+                </div><!-- notice -->
+            </div><!-- bottom_left -->
+            <div class="bottom_right">
+                <div class="sns">
+                  <ul class="sns_icon">
+                   <li><a href="https://www.youtube.com/user/mymissha" target="_blank"><img src="images/icon_youtube.png" alt="유튜브아이콘" width="27" height="21"></a></li>
+                   <li><a href="https://www.instagram.com/missha.official/" target="_blank"><img src="images/icon_instargram.png" alt="인스타그램아이콘" width="24" height="25"></a></li>
+                   <li><a href="https://ko-kr.facebook.com/myMISSHA/" target="_blank"><img src="images/icon_facebook.png" alt="페이스북아이콘" width="12" height="23"></a></li>
+                   </ul><!-- sns_icon -->
+               </div><!-- sns -->
+            <div id="family_site">
+         <button>관련 사이트<span class="icon1">+</span></button>
+         <ul>
+             <li><a href="https://www.mynunc.com" target="_blank">nunc</a></li>
+             <li><a href="https://www.apieu.com/" target="_blank">A'pieu</a></li>
+             <li><a href="http://ablecnc.com/" target="_blank">ABLE C&amp;C</a></li>
+         </ul>
+     </div>
+            </div><!-- bottom_right -->
+        </div><!-- list12 -->
+    </div><!-- box -->
+</div><!-- bottom_wrap2 하단2 데스크탑/일부 테블릿&모바일 -->
+<p class="top_img"><a href="#top"><img src="images/top.png" alt="#" width="50" height="50"></a></p><!-- 맨위로 데스크탑/태블릿/모바일 -->
+</body>
+</html>
